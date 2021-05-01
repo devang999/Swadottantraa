@@ -6,7 +6,7 @@
                 <a href="{{ url('terms-and-conditions') }}" class="text-light nav-link">Terms & Conditions</a>
             </div>
             <div class="mt-2 text-light">
-                Copyright &copy; 2021 SWA <small class="logo-dot-text"><i class="fa fa-circle"></i></small> TANTRAA Wellness Private Limited. | Designed by Bestla Group
+                Copyright &copy; 2021 SWA <small class="logo-dot-text"><i class="fa fa-circle"></i></small> TANTRAA Wellness Private Limited. | Designed by <a class="text-light" href="https://bestlagroup.com/">Bestla Group</a>
             </div>
         </div>
     </div>
