@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Faq\AddRequest;
+use App\Http\Requests\Admin\Faq\UpdateRequest;
 use App\Repository\Interfaces\FAQRepositoryInterface;
 
 class FAQController extends Controller
@@ -79,7 +80,7 @@ class FAQController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(AddRequest $request, $id)
+    public function update(UpdateRequest $request, $id)
     {
         if ($this->faq->update($request->validated(), $id)) {
             return redirect()->route('faq.index')->with('success', 'FAQ updated successfully.');
