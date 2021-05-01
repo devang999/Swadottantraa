@@ -82,6 +82,7 @@ class FAQController extends Controller
      */
     public function update(UpdateRequest $request, $id)
     {
+        
         if ($this->faq->update($request->validated(), $id)) {
             return redirect()->route('faq.index')->with('success', 'FAQ updated successfully.');
         }

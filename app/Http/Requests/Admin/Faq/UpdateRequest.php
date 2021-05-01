@@ -24,6 +24,7 @@ class UpdateRequest extends FormRequest
      */
     public function rules()
     {
+        
         $id = $this->route('faq');
         return [
             'answer' => 'required|string',
